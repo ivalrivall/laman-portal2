@@ -1,16 +1,6 @@
 <template>
   <div>
-    <div
-      style="
-        padding-bottom: 10px;
-        background: linear-gradient(
-            90.29deg,
-            #121e86 0.87%,
-            rgba(70, 89, 255, 0.65) 99.73%
-          ),
-          #fff8f8;
-      "
-    >
+    <div style="padding-bottom: 10px" class="gradient">
       <b-container class="container-resi px-0">
         <b-row class="px-0 container-resi_wrapper">
           <b-col :sm="12" :md="12" :lg="6" class="container-resi_input-resi">
@@ -320,6 +310,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.gradient {
+  background: linear-gradient(
+      90.29deg,
+      #121e86 0.87%,
+      rgba(70, 89, 255, 0.65) 99.73%
+    ),
+    #fff8f8;
+}
 .logo-image {
   background: linear-gradient(
       90.14deg,
