@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Article from "@/components/Article";
+import Article from "@/components/Article.vue";
 
 export default {
-  name: "blog",
+  name: "Blog",
   components: {
-    "article-page": Article
-  }
+    "article-page": Article,
+  },
 };
 </script>

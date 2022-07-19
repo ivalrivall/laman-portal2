@@ -1,16 +1,18 @@
 <template>
   <div>
     <div
-      style="padding-top: 53px;padding-bottom: 10px; background: linear-gradient(0deg, #FFF8F8, #FFF8F8), #FFF8F8;"
+      style="
+        padding-top: 53px;
+        padding-bottom: 10px;
+        background: linear-gradient(0deg, #fff8f8, #fff8f8), #fff8f8;
+      "
     >
       <b-container class="container-resi px-0">
         <b-row class="container-resi_wrapper">
           <b-col :sm="12" :md="12" :lg="6" class="container-resi_input-resi">
             <div class="d-flex align-items-center">
               <div class="d-block">
-                <p class="container-resi_text-title pb-0">
-                  Back to Nature
-                </p>
+                <p class="container-resi_text-title pb-0">Back to Nature</p>
                 <p class="container-resi_text-small pb-0">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Corporis earum delectus distinctio quidem possimus! Quidem,
@@ -34,7 +36,9 @@
       </b-container>
       <b-container style="margin-top: 100px; margin-bottom: 200px">
         <b-row>
-          <p style="font-size:40px;color:#fff;font-weight:bold">How its work</p>
+          <p style="font-size: 40px; color: #fff; font-weight: bold">
+            How its work
+          </p>
         </b-row>
         <b-row>
           <b-col
@@ -44,45 +48,45 @@
             v-for="(item, index) in articles"
             :key="index"
           >
-            <p style="font-size:36px; color: #000">{{ item.title }}</p>
-            <p style="font-size:14px; color: #000">{{ item.description }}</p>
+            <p style="font-size: 36px; color: #000">{{ item.title }}</p>
+            <p style="font-size: 14px; color: #000">{{ item.description }}</p>
           </b-col>
         </b-row>
       </b-container>
     </div>
-    <div style="background: #0C206C;">
-      <b-container style="padding-top: 20px;padding-bottom:20px">
+    <div style="background: #0c206c">
+      <b-container style="padding-top: 20px; padding-bottom: 20px">
         <b-row>
           <b-col>
             <img
               src="@/assets/images/fb.svg"
               alt="fb"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/tiktok.svg"
               alt="tiktok"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/youtube.svg"
               alt="youtube"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/instagram.svg"
               alt="instagram"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/twitter.svg"
               alt="twitter"
-              style="height:40px;width:auto"
+              style="height: 40px; width: auto"
             />
           </b-col>
           <b-col :sm="12" :md="6"></b-col>
           <b-col class="">
-            <span class="text-white" style="font-weight:700">
+            <span class="text-white" style="font-weight: 700">
               Copyright 2022 @
             </span>
             <img src="@/assets/images/nova_footer.svg" alt="nova_footer" />
@@ -99,8 +103,8 @@ export default {
   name: "Article",
   computed: {
     ...mapGetters({
-      articles: "general/articles"
-    })
+      articles: "general/articles",
+    }),
   },
   methods: {
     async getArticle() {
@@ -118,20 +122,20 @@ export default {
         );
         this.$store.dispatch("general/setArticle", response.data.data);
       } catch (error) {
-        const err = error.response ? error.response.data.message : error;
+        const err = error ? error.message : error;
         this.$notify({
           title: "Perhatian",
           text: err,
           type: "warn",
-          position: "top center"
+          position: "top center",
         });
         console.log("error", error);
       }
-    }
+    },
   },
   created() {
     this.getArticle();
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>

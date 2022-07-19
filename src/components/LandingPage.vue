@@ -1,7 +1,15 @@
 <template>
   <div>
     <div
-      style="padding-bottom: 10px; background: linear-gradient(90.29deg, #121E86 0.87%, rgba(70, 89, 255, 0.65) 99.73%), #FFF8F8;"
+      style="
+        padding-bottom: 10px;
+        background: linear-gradient(
+            90.29deg,
+            #121e86 0.87%,
+            rgba(70, 89, 255, 0.65) 99.73%
+          ),
+          #fff8f8;
+      "
     >
       <b-container class="container-resi px-0">
         <b-row class="px-0 container-resi_wrapper">
@@ -31,68 +39,88 @@
       </b-container>
       <b-container style="margin-top: 100px; margin-bottom: 200px">
         <b-row>
-          <p style="size:40px;color:#fff;font-weight:bold">How its work</p>
+          <p style="size: 40px; color: #fff; font-weight: bold">How its work</p>
         </b-row>
         <b-row>
           <b-col>
             <img
               src="@/assets/images/group_1.svg"
               alt=""
-              style="width: 350px;height:auto"
+              style="width: 350px; height: auto"
             />
           </b-col>
           <b-col>
             <img
               src="@/assets/images/group_2.svg"
               alt=""
-              style="width: 350px;height:auto"
+              style="width: 350px; height: auto"
             />
           </b-col>
           <b-col>
             <img
               src="@/assets/images/group_3.svg"
               alt=""
-              style="width: 350px;height:auto"
+              style="width: 350px; height: auto"
             />
           </b-col>
         </b-row>
       </b-container>
     </div>
-    <div style="background-color:#FFF8F8">
+    <div style="background-color: #fff8f8">
       <b-container>
         <b-row>
           <b-col>
             <img
               src="@/assets/images/group_5.svg"
               alt="group_5"
-              style="top:-140px;position:relative;height:300px;width:auto"
+              style="
+                top: -140px;
+                position: relative;
+                height: 300px;
+                width: auto;
+              "
             />
           </b-col>
           <b-col>
             <img
               src="@/assets/images/group_6.svg"
               alt="group_5"
-              style="top:-140px;position:relative;height:300px;width:auto"
+              style="
+                top: -140px;
+                position: relative;
+                height: 300px;
+                width: auto;
+              "
             />
           </b-col>
           <b-col>
             <img
               src="@/assets/images/group_7.svg"
               alt="group_5"
-              style="top:-140px;position:relative;height:300px;width:auto"
+              style="
+                top: -140px;
+                position: relative;
+                height: 300px;
+                width: auto;
+              "
             />
           </b-col>
           <b-col>
             <img
               src="@/assets/images/group_8.svg"
               alt="group_5"
-              style="top:-140px;position:relative;height:300px;width:auto"
+              style="
+                top: -140px;
+                position: relative;
+                height: 300px;
+                width: auto;
+              "
             />
           </b-col>
         </b-row>
       </b-container>
     </div>
-    <div style="background-color:#FFF8F8">
+    <div style="background-color: #fff8f8">
       <b-container>
         <b-row>
           <b-col :sm="12" :md="1" :lg="1"></b-col>
@@ -100,16 +128,16 @@
             <img
               src="@/assets/images/body_1.svg"
               alt="body_1"
-              style="height: 300px;width:auto"
+              style="height: 300px; width: auto"
             />
           </b-col>
           <b-col :sm="12" :md="1" :lg="1"></b-col>
           <b-col>
             <div style="max-width: 400px">
-              <p style="font-size:36px;font-weight:700">
+              <p style="font-size: 36px; font-weight: 700">
                 Easy To Use On All Your device
               </p>
-              <p style="font-size:14px">
+              <p style="font-size: 14px">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Corporis earum delectus distinctio quidem possimus! Quidem,
                 nulla alias! Itaque laudantium corporis dolorum. Aut voluptates
@@ -120,14 +148,14 @@
           </b-col>
           <b-col :sm="12" :md="1" :lg="1"></b-col>
         </b-row>
-        <b-row style="margin-top:140px">
+        <b-row style="margin-top: 140px">
           <b-col :sm="12" :md="1" :lg="1"></b-col>
           <b-col>
             <div style="max-width: 400px">
-              <p style="font-size:36px;font-weight:700">
+              <p style="font-size: 36px; font-weight: 700">
                 Manage All Content With Creativity
               </p>
-              <p style="font-size:14px">
+              <p style="font-size: 14px">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Corporis earum delectus distinctio quidem possimus! Quidem,
                 nulla alias! Itaque laudantium corporis dolorum. Aut voluptates
@@ -141,27 +169,27 @@
             <img
               src="@/assets/images/body_2.svg"
               alt="body_1"
-              style="height: 300px;width:auto"
+              style="height: 300px; width: auto"
             />
           </b-col>
           <b-col :sm="12" :md="1" :lg="1"></b-col>
         </b-row>
-        <b-row style="margin-top:140px">
+        <b-row style="margin-top: 140px">
           <b-col :sm="12" :md="1" :lg="1"></b-col>
           <b-col>
             <img
               src="@/assets/images/body_3.svg"
               alt="body_1"
-              style="height: 300px;width:auto"
+              style="height: 300px; width: auto"
             />
           </b-col>
           <b-col :sm="12" :md="1" :lg="1"></b-col>
           <b-col>
             <div style="max-width: 400px">
-              <p style="font-size:36px;font-weight:700">
+              <p style="font-size: 36px; font-weight: 700">
                 The Best Content Management System
               </p>
-              <p style="font-size:14px">
+              <p style="font-size: 14px">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Corporis earum delectus distinctio quidem possimus! Quidem,
                 nulla alias! Itaque laudantium corporis dolorum. Aut voluptates
@@ -175,74 +203,83 @@
       </b-container>
     </div>
     <div
-      style="background-color:#344999; padding-top: 40px; padding-bottom: 40px"
+      style="background-color: #344999; padding-top: 40px; padding-bottom: 40px"
     >
       <b-container>
-        <p style="font-size:36px;color:#FFFBFB">Client Testimony</p>
+        <p style="font-size: 36px; color: #fffbfb">Client Testimony</p>
         <b-row>
           <b-col>
-            <b-card class="card" style="width:340px; background-color:#FFFBFB">
+            <b-card
+              class="card"
+              style="width: 340px; background-color: #fffbfb"
+            >
               <img
                 src="@/assets/images/footer_1.svg"
                 alt="footer"
-                style="height:180px;width:auto"
+                style="height: 180px; width: auto"
               />
             </b-card>
           </b-col>
           <b-col>
-            <b-card class="card" style="width:340px; background-color:#FFFBFB">
+            <b-card
+              class="card"
+              style="width: 340px; background-color: #fffbfb"
+            >
               <img
                 src="@/assets/images/footer_2.svg"
                 alt="footer"
-                style="height:180px;width:auto"
+                style="height: 180px; width: auto"
               />
             </b-card>
           </b-col>
           <b-col>
-            <b-card class="card" style="width:340px; background-color:#FFFBFB">
+            <b-card
+              class="card"
+              style="width: 340px; background-color: #fffbfb"
+            >
               <img
                 src="@/assets/images/footer_3.svg"
                 alt="footer"
-                style="height:180px;width:auto"
+                style="height: 180px; width: auto"
               />
             </b-card>
           </b-col>
         </b-row>
       </b-container>
     </div>
-    <div style="background: #0C206C;">
-      <b-container style="padding-top: 20px;padding-bottom:20px">
+    <div style="background: #0c206c">
+      <b-container style="padding-top: 20px; padding-bottom: 20px">
         <b-row>
           <b-col>
             <img
               src="@/assets/images/fb.svg"
               alt="fb"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/tiktok.svg"
               alt="tiktok"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/youtube.svg"
               alt="youtube"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/instagram.svg"
               alt="instagram"
-              style="height:40px;width:auto;margin-right:10px"
+              style="height: 40px; width: auto; margin-right: 10px"
             />
             <img
               src="@/assets/images/twitter.svg"
               alt="twitter"
-              style="height:40px;width:auto"
+              style="height: 40px; width: auto"
             />
           </b-col>
           <b-col :sm="12" :md="6"></b-col>
           <b-col class="">
-            <span class="text-white" style="font-weight:700">
+            <span class="text-white" style="font-weight: 700">
               Copyright 2022 @
             </span>
             <img src="@/assets/images/nova_footer.svg" alt="nova_footer" />

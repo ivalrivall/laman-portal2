@@ -1,10 +1,8 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import { generalStore } from "@/stores/general.store";
+import { generalStore } from "@/stores/general.store.js";
 
-Vue.use(Vuex);
+import { createStore } from "vuex";
 
-export default new Vuex.Store({
+export const store = createStore({
   state: {},
   mutations: {},
   actions: {},

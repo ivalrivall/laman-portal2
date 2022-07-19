@@ -1,8 +1,8 @@
 import axios from "axios";
-import store from "../store";
+import { store } from "../store.js";
 const customAxios = axios.create({
   // eslint-disable-next-line no-undef
-  baseURL: process.env.VUE_APP_API_URL,
+  baseURL: process.env.VUE_APP_BACKEND_URL,
   headers: {
     "Content-type": "application/json",
     Authorization: localStorage.getItem("allstar_token")
